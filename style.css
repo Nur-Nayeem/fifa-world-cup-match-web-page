@@ -204,3 +204,75 @@ hr {
 .list-link:hover::after {
     width: 100%;
 } */
+
+
+
+@media screen and (max-width: 767.98px) {
+    .banner-container {
+        margin: 20px 20px;
+    }
+
+    .banner-content .banner-header {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .banner-content .banner-details {
+        font-size: 0.7rem;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        max-width: 406px;
+    }
+
+    .banner-container,
+    .main-container,
+    .bootom-nav {
+        flex-direction: column;
+    }
+
+    .left-main {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1175px) {
+
+    .banner-container {
+        margin: 20px 20px;
+    }
+
+    .banner-content .banner-header {
+        font-size: 2.2rem;
+    }
+
+    .banner-content .banner-details {
+        font-size: 0.7rem;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        max-width: 406px;
+    }
+
+
+    .left-main {
+        flex-direction: row;
+        width: 100%;
+        background-color: transparent;
+        justify-content: space-around;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
